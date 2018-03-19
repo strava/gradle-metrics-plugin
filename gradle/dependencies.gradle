@@ -48,7 +48,7 @@ dependencies {
     // So this version removes the static binding classes
     plugin files('lib/logback-classic-nobinding-1.1.3.jar')
 
-    plugin ("io.searchbox:jest:0.1.7") {
+    plugin ("io.searchbox:jest:2.4.0") {
         exclude group: 'commons-logging', module: 'commons-logging'
     }
 

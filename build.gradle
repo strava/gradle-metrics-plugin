@@ -48,3 +48,6 @@ pluginBundle {
         }
     }
 }
+
+// Override the version code set by Netflix for publishing to our own repository
+version = "6.1.0-jest2.4.0"

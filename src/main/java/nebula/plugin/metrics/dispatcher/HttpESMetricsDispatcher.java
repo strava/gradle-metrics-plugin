@@ -101,7 +101,7 @@ public final class HttpESMetricsDispatcher extends AbstractESMetricsDispatcher {
     protected boolean exists(String indexName) {
         IndicesExists indicesExists = new IndicesExists.Builder(indexName).build();
         JestResult result = execute(indicesExists, true);
-        return result.getJsonObject().get("found").getAsBoolean();
+        return result.isSucceeded();
     }
 
     private <T extends JestResult> T execute(Action<T> clientRequest, boolean allowNotFound) {
